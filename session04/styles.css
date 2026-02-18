@@ -1,0 +1,56 @@
+body {background-color: #d0bbac;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#wrapper { background-color: #bba698;
+width: 98%;
+margin: 8px auto;
+}
+
+/* grouping selector */
+h3, h4, h5 {
+margin: 0px;
+}
+
+h1 {
+color: #d2691e; 
+font-family: "Playwrite AT", cursive;
+}
+/* descendant selectors */
+/* 0-9 and A-f is in the RGB color model the first two numbers or letters is red, the second is green and the third is blue */
+
+
+/* 100-900 weight for google fonts */
+/* I put in the google font for the header but didn't like it so I switched it */
+header h2 {
+color: #803f11;
+font-family: Arial, Helvetica, sans-serif
+
+}
+
+main h2 {
+color: #63310d;  
+}
+
+main h4 {
+font-size: 12px;
+}
+
+main a {
+ color: #803f11;
+ text-decoration: none;
+}
+
+/* pseudo class selector */
+main a:hover {
+ color: #63310d;
+}
+
+span.copyright {
+color: #52280c;
+}
+
+span.author {
+    color: #150a03;
+}
