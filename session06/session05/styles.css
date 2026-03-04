@@ -1,0 +1,49 @@
+body {
+    background-color: #465D9C;
+}
+    #wrapper {
+background-color:#DBB451;
+width: 70%;
+margin: 0px auto;
+}
+
+header, nav, main, footer {
+    padding: 20px;
+    border: 2px solid #867548;
+}
+main h2 {
+background-color: #465D9C;
+padding: 6px;
+border-bottom: 10px solid #40485C;
+color:#DBB451;
+
+margin: 60px 0px 0px 0px;
+}
+
+main h3 {
+
+background-color: #40485C;
+padding: 6px;
+border-bottom: 10px solid #465D9C;
+color:#DBB451
+
+}
+
+div.imageContainer {
+    background-color: #40485C;
+    padding: 20px;
+    border: 11px solid #465D9C;
+}
+
+div.imageContainer img {
+width: 200px;
+height: 200px;
+border: 11px solid #465D9C;
+margin: 10px;
+padding: 30px;
+background-color: #40485C;
+background-image: url("images/background01.jpg");
+}
+span.copyright {
+    color:#465D9C
+}
