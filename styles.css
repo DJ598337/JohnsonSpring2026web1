@@ -1,0 +1,113 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+body {
+    background-color: #ffffff;
+}
+
+body {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Add padding to all of the .container child elements */
+.container>* {
+    padding: 20px;
+}
+
+/* FLEX PARENT */
+.container {
+    background-color: #EF2EEF;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+}
+
+/* FLEX CHILDREN */
+header {
+    background-color: #B6F0B6;
+    order: 1;
+    flex: 1 0 100%;
+    /* grow on, shrink off, span width of browser */
+    text-align: center;
+}
+
+main {
+    background-color: #B1F2DD;
+    order: 3;
+    flex: 1 1 500px;
+}
+
+/* DISPLAY NAV HIGHER ON PAGE BUT LETTING THE HTML BE LOWER FOR ACCESSIBILITY */
+nav {
+    background-color: #B6F0CA;
+    order: 2;
+    flex: 1 0 200px;
+}
+
+
+
+.button {
+  background-color: #79a698;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color:#6cabb2;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #499290;
+}
+
+img {
+width: 50%;
+height: 200px
+
+}
+
+aside {
+    background-color: #C7F2A7;
+    order: 4;
+    flex: 1 0 200px;
+
+}
+
+footer {
+    background-color: #E7F2AC;
+    order: 5;
+    flex: 1 0 100%;
+    text-align: center;
+}
