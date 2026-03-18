@@ -1,113 +1,117 @@
-/* START border-box fix */
+/* boarder box fix */
 html {
-    box-sizing: border-box;
+box-sizing: border-box;
+
 }
-
-/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
-
-/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
-
-/* END border-box fix */
+/* end of boarder fix */
 
 body {
-    background-color: #ffffff;
-}
-
-body {
-  background-image: url("images/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Add padding to all of the .container child elements */
-.container>* {
-    padding: 20px;
-}
-
-/* FLEX PARENT */
-.container {
-    background-color: #EF2EEF;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 0px auto;
+ background-color: #f6f3ec;
+padding: 0;
+margin:1;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
-    text-transform: uppercase;
+h5 {
+  text-transform: uppercase;
 }
 
-/* FLEX CHILDREN */
+.wrapper{
+background: #bdfffc;
+display: grid;
+grid-template-columns: repeat(12, minmax(0, 1fr));
+width: 80%;
+margin:0 auto;
+
+}
+.image-box {
+  text-align: center;
+}
+
+nav h2 {
+  text-decoration: underline;
+}
+main h2 {
+  text-decoration: underline;
+}
+.underline-me {
+    color: #4d7b80;
+    text-decoration: underline;
+}
+aside h2 {
+  text-decoration: underline;
+}
+.wrapper>* {
+    padding: 20px;
+}
+
 header {
-    background-color: #B6F0B6;
-    order: 1;
-    flex: 1 0 100%;
-    /* grow on, shrink off, span width of browser */
     text-align: center;
+    background: #cee6ff;
+grid-column: 1/13;
+}
+
+
+nav {
+    text-align: center;
+background: #abf8c9;
+grid-column: 1/4;
 }
 
 main {
-    background-color: #B1F2DD;
-    order: 3;
-    flex: 1 1 500px;
+    text-align: center;
+background-color: #8be391;
+grid-column: 4/10;
+}
+p{
+    text-align: justify;
+}
+.center-me-only{
+    text-align: center;
+}
+aside {
+    text-align: center;
+background-color: #dbffa2;
+grid-column: 10/13;
 }
 
-/* DISPLAY NAV HIGHER ON PAGE BUT LETTING THE HTML BE LOWER FOR ACCESSIBILITY */
-nav {
-    background-color: #B6F0CA;
-    order: 2;
-    flex: 1 0 200px;
+main, nav, aside{
+    grid-row: 2/4;
 }
-
-
-
-.button {
-  background-color: #79a698;
-  color: #ffffff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  display: inline-block;
-}
-
 a {
   text-decoration: none;
-  color:#6cabb2;
+  color:#000000;
 }
 
 a:hover {
   text-decoration: none;
-  color: #499290;
+  color: #ff5cff;
 }
 
-img {
-width: 50%;
-height: 200px
-
-}
-
-aside {
-    background-color: #C7F2A7;
-    order: 4;
-    flex: 1 0 200px;
+h1 {
+ color: cornflowerblue;
+ font-family: fantasy;
 
 }
 
-footer {
-    background-color: #E7F2AC;
-    order: 5;
-    flex: 1 0 100%;
+h2 {
+color: #6cabb2;
+font-family: monospace;
+
+}
+
+.not-you{
     text-align: center;
+}
+footer {
+ background: #a7bbf7;   
+grid-column: 1/13;
 }
