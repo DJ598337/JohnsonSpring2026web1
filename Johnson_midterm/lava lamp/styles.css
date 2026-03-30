@@ -1,0 +1,76 @@
+ body {
+      margin: 0;
+      height: 100vh;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+h2 {
+  color:  rgb(255, 255, 255);
+}
+
+    .lamp {
+      position: relative;
+      width: 200px;
+      height: 400px;
+      background-color: #111;
+      border-radius: 100px;
+      overflow: hidden;
+      border: 3px solid rgb(113, 113, 113);
+    }
+
+
+    .blob {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background-color: rgb(115, 105, 255);
+      border-radius: 50%;
+      animation: moveUp 6s infinite ease-in-out;
+    }
+
+    .blob1 {
+      left: 20px;
+      bottom: -20px;
+    }
+
+    .blob2 {
+      left: 100px;
+      bottom: -40px;
+      background-color: rgb(128, 0, 55);
+      animation-duration: 8s;
+    }
+
+    .blob3 {
+      left: 60px;
+      bottom: -60px;
+      background-color: rgb(238, 255, 0);
+      animation-duration: 7s;
+    }
+        .blob4 {
+      left: 10px;
+      bottom: -10px;
+      background-color: rgb(255, 145, 0);
+      animation-duration: 5s;
+    }
+         .blob5 {
+      left: 110px;
+      bottom: -110px;
+      background-color: rgb(0, 145, 255);
+      animation-duration: 10s;
+    }
+
+
+    @keyframes moveUp {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-250px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }

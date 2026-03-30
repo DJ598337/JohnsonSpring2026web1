@@ -1,0 +1,96 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
+}
+
+
+/* NAVBAR */
+nav {
+  font-family: "Imperial Script", cursive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links a:hover {
+  color: #F5C6D1;
+}
+
+
+.welcome {
+  text-align: center;
+  padding: 80px 20px;
+  background-image: url(images/strawberry-flowers-summer-seamless-children-s-pattern-repeating-background-with-summer-fruits-on-pink-cute-design-for-fabric-gift-wrap-packaging-vector.jpg);
+  color: rgb(0, 0, 0);
+}
+
+.welcome h2 {
+  font-family: "Barriecito", system-ui;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  margin-bottom: 20px;
+}
+
+
+/* CONTENT SECTION */
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: #F5C6D1;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.card h3 {
+   font-family: "Barriecito", system-ui;
+  
+}
+
+/* FOOTER */
+footer {
+  font-family: "Imperial Script", cursive;
+  text-align: center;
+  padding: 20px;
+  background-image: url(images/cute-black-ribbon-bow-vector-600nw-2509311967.webp);
+  color: rgb(240, 76, 76);
+}

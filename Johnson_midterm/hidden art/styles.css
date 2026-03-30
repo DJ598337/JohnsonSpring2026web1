@@ -1,0 +1,43 @@
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #85bedd;
+    }
+
+    .art-box {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .hidden-art,
+    .cover-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hidden-art {
+      z-index: 1;
+      transition: transform 1s ease;
+    }
+
+    .cover-image {
+      z-index: 2;
+      transition: opacity 1s ease, filter 1s ease;
+    }
+
+    .art-box:hover .cover-image {
+      opacity: 0;
+      filter: blur(10px);
+    }
+
+    .art-box:hover .hidden-art {
+      transform: scale(1.05);
+    }
