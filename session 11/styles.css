@@ -1,0 +1,155 @@
+body {
+	font-family: helvetica, arial, sans-serif;
+	margin: 0;
+	background: linear-gradient(180deg, #ffdcec 0%, #fff4f8 100%);
+	overflow: hidden;
+}
+
+h1 {
+	color: #8a4667;
+	text-align: center;
+	margin: 14px 0;
+}
+
+#page {
+	position: relative;
+	width: 100vw;
+	height: calc(100vh - 60px);
+}
+
+#left-container {
+	left: 0px;
+}
+
+#right-container {
+	right: 0px;
+}
+
+.container {
+	background: rgba(255, 255, 255, 0.78);
+	width: 15%;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+	border: 3px solid #f6bfd7;
+	box-sizing: border-box;
+}
+
+.clothes {
+	position: relative;
+	height: 13%;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.items {
+	position: absolute;
+	width: 110px;
+	height: auto;
+	max-width: none;
+	max-height: none;
+	z-index: 2;
+	cursor: grab;
+	touch-action: none;
+	user-select: none;
+	-webkit-user-drag: none;
+	object-fit: contain;
+}
+
+
+
+.background-walls {
+	height: 80%;
+	width: 60%;
+	background: rgba(255, 255, 255, 0.16);
+	border-radius: 1rem;
+	position: absolute;
+	bottom: 10%;
+	left: 20%;
+	border: 5px solid rgba(243, 176, 207, 0.55);
+	z-index: 1;
+}
+
+.background-top {
+	width: 50%;
+	height: 5%;
+	background: #ffd3a6;
+	position: absolute;
+	bottom: 90%;
+	left: 25%;
+	opacity: 0.95;
+	z-index: 1;
+	border-radius: 1rem 1rem 0 0;
+}
+
+.background-bottom {
+	width: 50%;
+	height: 2%;
+	background: #c88d62;
+	position: absolute;
+	bottom: 8%;
+	left: 25%;
+	opacity: 0.9;
+}
+
+.floor {
+	width: 60%;
+	height: 12%;
+	background: #e0b186;
+	position: absolute;
+	bottom: 10%;
+	left: 20%;
+	opacity: 0.95;
+	z-index: 0;
+}
+
+.background-long,
+.background-short {
+	position: absolute;
+	background: rgba(255, 255, 255, 0.35);
+	border-radius: 2rem;
+}
+
+.background-long {
+	width: 3%;
+	height: 20%;
+	bottom: 20%;
+	left: 5%;
+}
+
+.background-short {
+	width: 3%;
+	height: 5%;
+	bottom: 45%;
+	left: 5%;
+}
+
+.background-walls::before,
+.background-walls::after {
+	content: "";
+	position: absolute;
+	top: 8%;
+	width: 22%;
+	height: 44%;
+	border: 7px solid #e8a9c6;
+	border-top-width: 10px;
+	border-radius: 12px;
+	background: rgba(255,255,255,0.18);
+}
+
+.background-walls::before { left: 6%; }
+.background-walls::after { right: 6%; }
+
+.doll-base {
+	position: absolute;
+	left: 50%;
+	bottom: 8%;
+	transform: translateX(-50%);
+	width: 300px;
+	height: auto;
+	z-index: 2;
+	pointer-events: none;
+}
