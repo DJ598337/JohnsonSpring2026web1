@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Final Project Proposal</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #00ffd5;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin: 8px;
+      border: none;
+      cursor: pointer;
+      background: #00ffd5;
+      color: black;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .section {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      background: #222;
+      border-radius: 10px;
+    }
+
+    .highlight {
+      background: #333;
+      border: 2px solid #00ffd5;
+    }
+
+    .fade-box {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background: #444;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🎬 Final Project Proposal</h1>
+  <p>Click the buttons below to explore my website ideas</p>
+
+  <button id="themeBtn">Theme</button>
+  <button id="descBtn">Website Description</button>
+  <button id="styleBtn">Style + Design</button>
+  <button id="jsBtn">JavaScript + Interaction</button>
+
+  <div id="theme" class="section">
+    <h2>Theme</h2>
+    <p>My website will be about movies and the evolution of cinema, including interactive elements like timelines and buying your own snacks at the stand.</p>
+  </div>
+
+  <div id="description" class="section">
+    <h2>Website Description</h2>
+    <p>The website will include a movie history interactive timeline as well as some paragraphs going into detail about the history of cinema, images of some films mentioned, games and a quiz about movie generes and some history.</p>
+  </div>
+
+  <div id="style" class="section">
+    <h2>Style (Fonts + Colors)</h2>
+    <p>For fonts I have not thought about that as of yet, once I build the bones and structure of the website I will decide on this. As for color I will be going with blue, red and white for the iconic movie colors (i.e 3D movie glasses)</p>
+
+    <button id="fadeBtn">Click for game and interative ideas</button>
+    <div class="fade-box">
+      I want this website to be centered around film, so alot of the games and interactive pieces will be film themed. I will also be adding a film themed cursor to make it more fun. 
+    </div>
+  </div>
+
+  <div id="js" class="section">
+    <h2>JavaScript + jQuery + p5</h2>
+    <p>I will have to think of my Javascript ideas, any ideas would be helpful as I have never used Javascript. </p>
+    <p>My jQuery will be used for click-based navigation and maybe fading inbetween the web-pages.</p>
+    <p>My p5 element will be an animated film strip or moving popcorn particles that respond to mouse movement.</p>
+  </div>
+
+  <script>
+    // jQuery CLICK + SLIDE TOGGLE
+    $("#themeBtn").click(function () {
+      $("#theme").slideToggle();
+    });
+
+    $("#descBtn").click(function () {
+      $("#description").slideToggle();
+    });
+
+    $("#styleBtn").click(function () {
+      $("#style").slideToggle();
+    });
+
+    $("#jsBtn").click(function () {
+      $("#js").slideToggle();
+    });
+
+    // jQuery FADE IN/OUT
+    $("#fadeBtn").click(function () {
+      $(".fade-box").fadeToggle(600);
+    });
+
+    // EXTRA: hover interaction (class change)
+    $(".section").hover(
+      function () {
+        $(this).addClass("highlight");
+      },
+      function () {
+        $(this).removeClass("highlight");
+      }
+    );
+  </script>
+
+</body>
+
+
+</html>
+
+<footer>
+    <span class="copyright"> &copy; </span> <span class="author" >Dalila Johnson </span>
+  </footer>
