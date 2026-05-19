@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie World - Home</title>
+  <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <h1>Movie World</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="game.html">Snack Game</a>
+      <a href="quiz.html">Movie Quiz</a>
+    </nav>
+  </header>
+
+  <main class="grid-layout">
+  
+    <section>
+      <h2>History of Movies</h2>
+      <p>Movies began in the late 1800s with silent black-and-white films. The very first black and white film was called the "Roundhay Garden Scene" which was a 2.11 second short silent film shot on October 14th in 1888. It was made by the French inventor, Louis Le Prince in Leeds from England. 
+      
+        <br>
+        Although Le Prince was the first to create film he disappeared before he could display his work, leaving Thomas Edision to be known as the father of motion pitcure and the creator of the kinetograph. 
+         <br>
+        <img src="images/1888 garden scene.jpg">
+        <br>
+        All films in the late 1880's and early 1890's were under a minute, without sound and mostly consisted of a single shot on a steady camera. The short films went from a simple novelty to an entertainment industry in it's first decade. With the invention of film editing, camera movements and other techniques throughout the years it changed the way we shot film and created certain narratives. 
+        <br>
+        In 1902 natural colored film emerged. Some of the first works being invented by Edward Raymond Turner. Before this, films were not naturally colored but hand-painted, tinted, stenciled or chemically treated (starting in 1895). 
+        <br>
+        <img src="images/1902.jpg">
+<br>
+ October 6th, 1927 is when talkies or movies with sound officially began. The very first film to have sound was "The Jazz Singer". Although it was part talkie with limited dialogue it helped spring the industry into a new wave of sound film which became the standard in the early 1930's, ending the silent era. These talkies first relied on Vitaphone sound-on-disc systems to capture sound, it was hard to maintain and often had films with many stills due to the massive amount of wires and bulky equipment used to make them. Soon after, films would switch to sound-on-film for better synchronization which allowed for more talkies with wider range of character movement.
+ <br>
+ <img src="images/the jazz singer.jpg">
+ <br>
+        In the 1950s is when TV, home video (1980's) and the internet (1990) influenced the consumption of films. With the varity of ways to make and publicize your own films, home videos and video art became more popular. 
+         Over time, sound, color, and digital effects transformed cinema into what we know and watch today.</p>
+         <br>
+         <img src="images/1950's.jpg">
+    </section>
+
+    <section>
+      <h2>Interactive Timeline</h2>
+      <div class="timeline">
+        <button onclick="showInfo('1888s')">1888</button>
+        <button onclick="showInfo('1890s')">1890s</button>
+        <button onclick="showInfo('1902')">1902</button>
+        <button onclick="showInfo('1920s')">1920s</button>
+        <button onclick="showInfo('1950s')">1950s</button>
+        <button onclick="showInfo('2000s')">2000s</button>
+      </div>
+      <p id="timeline-info">Click a year to learn more!</p>
+    </section>
+  </main>
+
+
+
+  <footer>
+    <span class="copyright"> &copy </span> <span class="author" >Dalila Johnson </span>
+    <p><a href="https://allthatsinteresting.com/first-movie-ever-made" target="_blank">Allthatsinteresting</a> - <a href="https://en.wikipedia.org/wiki/History_of_film" target="_blank"> Wikipedia Film History </a> - <a href="https://editor.p5js.org/DJ598337/full/-CxcHdpRI" target="_blank"> Orginal film strip</a> - <a href="https://editor.p5js.org/DJ598337/full/R92eIVQDa" target="_blank"> Popcorn animation</a>
+    
+    </p>
+  </footer>
+
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
+
+
